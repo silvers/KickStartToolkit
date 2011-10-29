@@ -120,8 +120,7 @@ p, address {
 
 /* 2-3-3. Inline-Level Elements
 ------------------------------------------------- */
-abbr,
-acronym {
+abbr {
     border-bottom: 1px dotted #aaa;
     font-variant:normal;
     cursor: help;
