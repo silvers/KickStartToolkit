@@ -118,57 +118,6 @@ p, address {
     margin: 1.618em 0;
     }
 
-blockquote {
-    margin: 1.618em 20px;
-    padding: 0.618em 20px;
-    color: #666;
-    border: 1px solid #aaa;
-    background-color: #eee;
-    }
-    blockquote[title]:before {
-        display: block;
-        content: attr(title);
-        margin: 2px 2px 1em;
-        padding: 0.2em 16px;
-        color: #333;
-        font-weight: bold;
-        background-color: #fefefe; 
-        }
-    blockquote[cite]:after {
-        display: block; 
-        content: "引用元： "attr(cite);
-        margin: 1em 2px 2px;
-        padding: 0.2em 16px;
-        color: #333;
-        text-align: right;
-    }
-    blockquote h3 {
-        margin: 0.618em 6px;
-        }
-    blockquote p, blockquote h4 {
-        margin: 0.618em 16px;
-        }
-    blockquote * {
-        color: #666;
-    }
-
-pre {
-    margin: 1.618em 20px;
-    border: 1px dotted #aaa;
-    padding: 0.618em 10px;
-    overflow: scroll;
-    font-size: 92%;
-    }
-    pre[title]:before {
-        display: block; 
-        content: attr(title);
-        margin: 2px 2px 1em;
-        padding: 0.2em 10px;
-        color: #333;
-        font-weight: bold;
-        background-color: #fff;
-        }
-
 /* 2-3-3. Inline-Level Elements
 ------------------------------------------------- */
 abbr,
