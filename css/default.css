@@ -102,39 +102,11 @@ address, cite, code, dfn, var {
 ------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0.618em 10px;
-    font-size:100%;
+    font-size: 100%;
     font-weight: normal;
     line-height: 1;
     }
 
-h1 {
-    font-size: 189%; /* 25px */
-    font-weight: bold;
-    }
-h2 {
-    border-left: 7px solid #666;
-    padding: 0.2em 7px;
-    font-size: 159%; /* 21px */
-    font-weight: bold;
-    }
-h3 {
-    border-bottom: 1px solid #666;
-    padding: 0.1em 2px;
-    font-size: 123.1%; /* 16px */
-    font-weight: bold;
-    }
-h4 {
-    margin-left: 30px;
-    font-size: 108%; /* 14px */
-    font-weight: bold;
-    }
-h5 {
-    margin-left: 30px;
-    font-size: 108%; /* 14px */
-    }
-h6 {
-    }
 
 /* 2-3-2. Block-Level Elements
 ------------------------------------------------- */
