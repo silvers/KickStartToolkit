@@ -46,9 +46,6 @@ pre, code, kbd, samp, tt {
 =================================================
     2-1. Main Reset
     2-2. Text Module
-        2-2-1. Heading
-        2-2-2. Block-Level Elements
-        2-2-3. Inline-Level Elements
     2-3. Hypertext Module
     2-4. List Module
     2-5. Edit Module
@@ -61,7 +58,6 @@ pre, code, kbd, samp, tt {
 ================================================= */
 
 /* 2-1. Main Reset
--------------------------------------------------
 ------------------------------------------------- */
 
 html {
@@ -79,26 +75,26 @@ body,
 h1, h2, h3, h4, h5, h6,
 div, p, blockquote,
 ul, ol, li, dl, dt, dd,
-pre, code,
+pre, code, figure,
 form, fieldset, legend, input, textarea,
 th, td {
     margin: 0;
     padding: 0;
     }
 
-em, strong,
-caption, th,
+em, strong, mark,
+caption, th, figcaption,
 address, cite, code, dfn, var {
     font-style: normal;
     font-weight: normal;
     }
 
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+        display:block;
+    }
 
 /* 2-2. Text Module
--------------------------------------------------
-------------------------------------------------- */
-
-/* 2-2-1. Heading
 ------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
@@ -107,10 +103,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     }
 
-
-/* 2-3-2. Block-Level Elements
-------------------------------------------------- */
-
 div {
     }
 
@@ -118,8 +110,6 @@ p, address {
     margin: 1.618em 0;
     }
 
-/* 2-3-3. Inline-Level Elements
-------------------------------------------------- */
 abbr {
     border-bottom: 1px dotted #aaa;
     font-variant:normal;
@@ -137,7 +127,7 @@ kbd {
         border-bottom: 1px solid #333;
         padding: 0 0.1em;
         background: transparent;
-        font-family: Meiryo, Arial, Helvetica, "ＭＳ Ｐゴシック", sans-serif;
+        font-family: "メイリオ", Meiryo, Arial, Helvetica, "ＭＳ Ｐゴシック", sans-serif;
         }
 
 em {
@@ -146,6 +136,10 @@ em {
 
 strong {
     color: #f7ab00;
+    }
+
+mark {
+    color: #ff9;
     }
 
 sub {
@@ -171,8 +165,6 @@ br, cite, code, span {
 
 
 /* 2-3. Hypertext Module
--------------------------------------------------
-    Set color
 ------------------------------------------------- */
 
 a:link,
@@ -185,7 +177,6 @@ a:visited {
 
 
 /* 2-4. List Module
--------------------------------------------------
 ------------------------------------------------- */
 
 ul, ol {
@@ -220,9 +211,7 @@ dd ul, dd ol, dd dl, dd p {
 
 
 /* 2-5. Edit Module
--------------------------------------------------
 ------------------------------------------------- */
-
 del {
     color: #aaa;
     text-decoration: line-through;
@@ -241,7 +230,6 @@ ins {
 
 
 /* 2-6. Forms Module
--------------------------------------------------
 ------------------------------------------------- */
 form {
     margin: 1em 0;
@@ -338,9 +326,7 @@ legend {
 
 
 /* 2-7. Tables Module
--------------------------------------------------
 ------------------------------------------------- */
-
 table {
     margin: 0.618em 30px;
     border: 1px solid #ccc;
@@ -370,9 +356,7 @@ caption {
 
 
 /* 2-8. Image Module
--------------------------------------------------
 ------------------------------------------------- */
-
 img {
     vertical-align: bottom;
     border: none;
@@ -382,10 +366,9 @@ img {
         a:hover img {
             }
 
-/* 2-9. Other Module
--------------------------------------------------
-------------------------------------------------- */
 
+/* 2-9. Other Module
+------------------------------------------------- */
 object,
 embed {
     margin: 0;
@@ -398,45 +381,28 @@ hr {
     background: #ccc;
     }
 
-/* 3. Helper and Main hacks
+
+/* 3. Helper
 =================================================
     3-1. Clearfix
     3-2. AutoPagerize
-    3-3. Centering Hacks for IE -5.5
-    3-4. letter-spacing Hacks for IE 5.5-6
 ================================================= */
 
 
 /* 3-1. Clearfix
 ------------------------------------------------- */
+#pagebody,
+.clearfix {
+    zoom: 1; /* for IE 6-7 */
+    }
 
 #pagebody:after,
-#nav:after,
 .clearfix:after {
-    content: ".";
+    content: "";
     display: block;
-    height: 0;
     clear: both;
-    visibility: hidden;
     }
-    #pagebody,
-    #nav,
-    .clearfix {
-        display: inline-table; /* for MacIE */
-        zoom: 1; /* for IE 5-7 */
-        }
-    /* Hides from MacIE \*/
-        * html #pagebody,
-        * html #nav,
-        * html .clearfix {
-            height: 1%;
-            }
-        #pagebody,
-        #nav,
-        .clearfix {
-            display: block;
-            }
-    /* End hide from MacIE */
+
 
 /* 3-2. AutoPagerize
 ------------------------------------------------- */
@@ -452,23 +418,6 @@ p.autopagerize_page_info {
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     border-radius: 0.5em;
-    }
-
-/* 3-3. Centering Hacks for IE -5.5
-------------------------------------------------- */
-
-body {
-    text-align: center;
-    }
-    #container {
-        text-align: left;
-        }
-
-/* 3-4. letter-spacing Hacks for IE 5.5-6
-------------------------------------------------- */
-
-br {
-    letter-spacing: 0;
     }
 
 
