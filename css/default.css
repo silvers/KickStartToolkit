@@ -82,7 +82,7 @@ th, td {
     padding: 0;
     }
 
-em, strong, mark,
+em, strong, mark, small,
 caption, th, figcaption,
 address, cite, code, dfn, var {
     font-style: normal;
@@ -107,7 +107,7 @@ div {
     }
 
 p, address {
-    margin: 1.618em 0;
+    margin: 1.618em 10px;
     }
 
 abbr {
@@ -421,19 +421,3 @@ p.autopagerize_page_info {
     }
 
 
-/* Page Layout
-=================================================
-    container and pagebody
-================================================= */
-
-#container {
-    position: relative;
-    margin: 0 auto;
-    width: 940px;
-    font-size: 100%;
-    background-color: #fff;
-    }
-
-#pagebody {
-    position: relative;
-    }

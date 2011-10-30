@@ -7,6 +7,40 @@
  * Copyright 2011 silvers All rights reserved.
 ================================================= */
 
+
+/* Page Layout
+=================================================
+    container and pagebody
+================================================= */
+
+#container {
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+    font-size: 100%;
+    background-color: #fff;
+    }
+
+#pagebody {
+    position: relative;
+    }
+    #main {
+        float: left;
+        width: 700px;
+        }
+    #sub {
+        float: left;
+        width: 240px;
+        }
+
+#global-footer {
+    }
+    #global-footer small.copyright {
+        display: block;
+        text-align: center;
+        }
+
+
 /* Heading
 ------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
@@ -19,14 +53,14 @@ h1 {
     }
 
 h2 {
-    padding: 0.2em 7px;
+    margin-top: 1.618em;
     font-size: 159%; /* 21px */
     font-weight: bold;
     }
 
 h3 {
     border-bottom: 1px solid #666;
-    padding: 0.1em 2px;
+    padding: 0.2em 4px;
     font-size: 146.5%; /* 19px */
     font-weight: bold;
     }

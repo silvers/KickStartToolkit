@@ -58,6 +58,105 @@
                 <li style="font-size: 197%;">26px - 197.0% </li>
             </ul>
         </article>
+        <article>
+            <h2>Text Module</h2>
+            <p>headlineやquoteなどのText Moduleの表示例です。</p>
+            <article>
+                <h3>Headlines</h3>
+                <p>h1からh6までの見出しの表示例です。</p>
+
+                <h1>This is "h1".</h1>
+                <h2>This is "h2".</h2>
+                <h3>This is "h3".</h3>
+                <h4>This is "h4".</h4>
+                <h5>This is "h5".</h5>
+                <h6>This is "h6".</h6>
+            </article>
+            <article>
+                <h3>blockquote, q, cite</h3>
+                <p>引用は次のようになります。titleには引用元のサイト名またはコンテンツ名を、citeには引用元のURLを書きます。</p>
+                <blockquote title="坊ちゃん" cite="http://www.aozora.gr.jp/cards/000148/files/752_14964.html">
+                    <p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。</p>
+                </blockquote>
+                <p>夏目漱石の<cite>坊ちゃん</cite>は、<q>親譲りの無鉄砲で小供の時から損ばかりしている</q>という文章ではじまる。</p>
+            </article>
+        </article>
+            <article>
+                <h2>List Module</h2>
+                <p>番号なしリスト、番号付きリスト、定義リストの表示例です。</p>
+                <article>
+                    <h3>ul, li</h3>
+                    <p>番号なしリストは次のようになります。入れ子にすることも可能です。</p>
+                    <ul>
+                        <li>list item 1</li>
+                        <li>
+                            list item 2
+                            <ul>
+                                <li>
+                                    list item 2-1
+                                    <ul>
+                                        <li>list item 2-1-1</li>
+                                    </ul>
+                                </li>
+                                <li>list item 2-2</li>
+                            </ul>
+                        </li>
+                        <li>list item 3</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>ol, li</h3>
+                    <p>番号付きリストは次のようになります。入れ子にすることも可能です。</p>
+                    <ol>
+                        <li>list item 1</li>
+                        <li>
+                            list item 2
+                            <ol>
+                                <li>
+                                    list item 2-1
+                                    <ol>
+                                        <li>list item 2-1-1</li>
+                                    </ol>
+                                </li>
+                                <li>list item 2-2</li>
+                            </ol>
+                        </li>
+                        <li>list item 3</li>
+                    </ol>
+                </article>
+                <article>
+                    <h3>dl, dt, dd</h3>
+                    <p>定義リストは次のようになります。</p>
+                    <dl>
+                        <dt>dtタグとは</dt>
+                        <dd>リストの項目を定義します。</dd>
+                        <dt>ddタグとは</dt>
+                        <dd>リストの内容を記述します。</dd>
+                        <dd>このように内容をふたつにすることもできます。</dd>
+                    </dl>
+                </article>
+            </article>
+            <article>
+                <h2>Table Module</h2>
+                <table summary="テーブルの見た目のテストです">
+                    <caption>点数表</caption>
+                    <tbody>
+                        <tr>
+                            <th>名前</th>
+                            <th>点数</th>
+                        </tr>
+                        <tr>
+                            <td>太郎</td>
+                            <td>80点</td>
+                        </tr>
+                        <tr>
+                            <td>花子</td>
+                            <td>100点</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </article>
     </section>
     <section id="sub">
         <h1>sub column</h1>
@@ -65,7 +164,7 @@
 </div>
 
 <footer id="global-footer">
-    <small>Copyright (c) 2011 silvers All Rights Reserved.</small>
+    <small class="copyright">Copyright (c) 2011 silvers All Rights Reserved.</small>
 </footer>
 
 </div>
